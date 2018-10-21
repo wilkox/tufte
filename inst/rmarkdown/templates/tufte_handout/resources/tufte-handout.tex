@@ -1,5 +1,8 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$lang$,$endif$$if(papersize)$$papersize$,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 
+\usepackage{fontspec}
+\setmainfont[SmallCapsFont={Equity Caps A}]{Equity Text A}
+
 % ams
 \usepackage{amssymb,amsmath}
 
@@ -24,10 +27,6 @@ $endif$
   \makeatother
 $if(euro)$
   \newcommand{\euro}{€}
-$endif$
-
-$if(mainfont)$
-    \setmainfont[$for(mainfontoptions)$$mainfontoptions$$sep$,$endfor$]{$mainfont$}
 $endif$
 $if(sansfont)$
     \setsansfont[$for(sansfontoptions)$$sansfontoptions$$sep$,$endfor$]{$sansfont$}
